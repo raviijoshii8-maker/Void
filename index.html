@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title> MARTINY · shadow & thorn · botanical relics</title>
+  <title> KAINT · shadow & thorn · botanical relics</title>
   <!-- Typography: gothic serif + shadow sans -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -682,12 +682,12 @@
 </head>
 <body>
 
-<!-- entry modal:  MARTINY invitation -->
+<!-- entry modal:  KAINT invitation -->
 <div id="entryModalVoid" class="modal-void">
   <div class="modal-void-block">
     <button id="closeVoidModal" class="modal-void-close"><i class="fas fa-leaf"></i></button>
     <div class="modal-void-icon"><i class="fas fa-skull"></i></div>
-    <h2 class="modal-void-title"> MARTINY</h2>
+    <h2 class="modal-void-title"> KAINT</h2>
     <p class="modal-void-desc">Shadow & thorn · botanical relics · ivy-wrought armor. Garments woven from midnight gardens and forgotten woods, kissed by moonlight.</p>
     <div class="modal-void-buttons">
       <button id="enterVoidBtn" class="btn-void-primary">🌿 ENTER THE THICKET</button>
@@ -698,7 +698,7 @@
 
 <header class="void-header">
   <div class="nav-void">
-    <div class="brand-void"> MARTINY<small>· THORN</small></div>
+    <div class="brand-void"> KAINT<small>· THORN</small></div>
     <nav class="nav-void-links">
       <a href="#shopVoid">SHADOW VAULT</a>
       <a href="#shopVoid">BOTANICAL RELICS</a>
@@ -719,7 +719,7 @@
   <section class="hero-void">
     <div class="hero-void-content">
       <div class="hero-void-badge">SHADOW & THORN · BOTANICAL RELICS · IVY WROUGHT</div>
-      <h1 class="hero-void-title"> MARTINY</h1>
+      <h1 class="hero-void-title"> KAINT</h1>
       <div class="hero-void-offer">first binding: <strong>15% off</strong> your first botanical relic</div>
       <a href="#shopVoid" class="btn-void">ENTER THE THICKET →</a>
     </div>
@@ -735,9 +735,9 @@
 
 <footer>
   <div class="footer-void">
-    <div class="footer-void-brand"> MARTINY</div>
+    <div class="footer-void-brand"> KAINT</div>
     <div class="footer-void-regions">SHADOW VAULT · BOTANICAL RELICS · THORN ARMORY</div>
-    <p style="font-size:0.55rem; opacity:0.7;">© 2026  MARTINY — woven from midnight gardens and forgotten woods, kissed by moonlight.</p>
+    <p style="font-size:0.55rem; opacity:0.7;">© 2026  KAINT — woven from midnight gardens and forgotten woods, kissed by moonlight.</p>
   </div>
 </footer>
 
@@ -759,7 +759,7 @@
 </div>
 
 <script>
-  //  MARTINY product catalog — botanical gothic theme
+  //  KAINT product catalog — botanical gothic theme
   const voidProducts = [
     { id: 8801, name: "Thornweave Cloak", category: "SHADOW", original: 899, price: 764, img: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=687&auto=format&fit=crop", alt: "cloak" },
     { id: 8802, name: "Ivy Tunic", category: "BOTANICAL", original: 348, price: 295, img: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=687&auto=format&fit=crop", alt: "tunic" },
@@ -902,7 +902,7 @@
   cartVoidIcon?.addEventListener('click',()=>cartOverlayVoidDiv.classList.add('active'));
   closeCartVoidBtn?.addEventListener('click',()=>cartOverlayVoidDiv.classList.remove('active'));
   cartOverlayVoidDiv?.addEventListener('click',(e)=>{ if(e.target===cartOverlayVoidDiv) cartOverlayVoidDiv.classList.remove('active'); });
-  document.getElementById('checkoutVoidBtn')?.addEventListener('click',()=>{ alert(' MARTINY seals your shadow offering. Your botanical relics are bound in thorn and midnight dew.'); cartVoid=[]; renderVoidCart(); cartOverlayVoidDiv.classList.remove('active'); });
+  document.getElementById('checkoutVoidBtn')?.addEventListener('click',()=>{ alert(' KAINT seals your shadow offering. Your botanical relics are bound in thorn and midnight dew.'); cartVoid=[]; renderVoidCart(); cartOverlayVoidDiv.classList.remove('active'); });
   document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.addEventListener('click',function(e){ const hash=this.getAttribute('href'); if(hash==="#") return; const sec=document.querySelector(hash); if(sec){ e.preventDefault(); sec.scrollIntoView({behavior:'smooth'}); } }); });
 
   renderVoidProducts();
